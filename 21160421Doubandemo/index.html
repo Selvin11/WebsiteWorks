@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 指定双核浏览器默认以何种方式渲染页面
+<meta name="renderer" content="webkit">//默认webkit内核
+<meta name="renderer" content="ie-comp">//默认IE兼容模式
+<meta name="renderer" content="ie-stand">//默认IE标准模式 -->
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<!-- for Ie8  -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- for mobile -->
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" /> 
+<title>Douban</title> 
+<meta name="keywords" content="#"> 
+<meta name="description" content="Dobandemo"><!--  website favicon -->
+<!-- <link rel="Bookmark" href="favicon.ico" > 
+<link rel="Shortcut Icon" href="favicon.ico" />  -->
+<!--[if lt IE 9]> 
+<script type="text/javascript" src="Lib/html5.js"></script>
+<script type="text/javascript" src="Lib/respond.min.js"></script>
+<script type="text/javascript" src="Lib/PIE_IE678.js"></script>
+<![endif]--> 
+<!-- <link href="框架样式" rel="stylesheet" type="text/css" /> -->
+<!-- 字体图标样式 -->
+<!-- <link href="iconfont/iconfont.css" rel="stylesheet" type="text/css" /> -->
+<!--自己的样式-->
+<link href="gsw.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]> 
+<script type="text/javascript" src="Lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('.pngfix,.icon');</script> 
+<![endif]--> 
+</head> 
+<body>
+	<div id="header">
+		<div class="navBar">
+			<ul>
+				<li><a href="#" class="lnk-book">豆瓣读书</a></li>
+				<li><a href="#" class="lnk-movie">豆瓣电影</a></li>
+				<li><a href="#" class="lnk-music">豆瓣音乐</a></li>
+				<li><a href="#" class="lnk-group">豆瓣小组</a></li>
+				<li><a href="#" class="lnk-events">豆瓣同城</a></li>
+				<li><a href="#" class="lnk-fm">豆瓣FM</a></li>
+				<li><a href="#" class="lnk-dongxi">豆瓣东西</a></li>
+				<li><a href="#" class="lnk-market">豆瓣市集</a></li>
+			</ul>
+		</div><!-- 头部导航栏结束 -->
+		<h1><a href="www.douban.com">豆瓣</a></h1>
+		<div class="search">
+			<form action="#" method="get">
+			<!-- 使用 <span> 来组合行内元素，以便通过样式来格式化它们 -->
+				<span class="inp">
+				<!-- 最大长度，输入字段宽度，提示字段，字段自动完成功能 -->
+					<input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员" name="q" autocomplete="off">
+				</span>
+				<span class="bn"><input type="submit" value="搜索"></span>
+			</form>
+		</div><!-- 搜索结束 -->
+	</div><!-- 头部结束 -->
+	<div id="intro-content">
+		<div class="wrapper">
+			<div class="login">
+				<form action="#" id="lzform">
+					<fieldset>
+						<legend>登录</legend>
+						
+						<div class="item item-accont">
+							
+							<input type="text" name="form_email" id="form_email" value="" class="inp" placeholder="邮箱 / 手机号" tabindex="1">
+						</div><!-- tab切换时的顺序定位：tabindex -->
+							<!-- input中的class:在input类别中可以进行二次设置style属性,其他同理 -->
+						<div class="item item-passwd">
+							<input name="form_password" placeholder="密码" id="form_password" class="inp" type="password" tabindex="2">
+							<div class="opt">
+								<a href="#">帮助</a>
+							</div>
+						</div>
+						<div class="item item-test">
+							<div class="test-block">
+								<input type="text" autocomplete="off" class="inp" id="test_field" name="test-solution" tabindex="3" placeholder="验证码">
+							</div>
+							<img id="text_image" src="http://img3.imgtn.bdimg.com/it/u=1453892431,3162038766&fm=21&gp=0.jpg" alt="captcha" class="test_image" title="看不清楚?点图片可以换一个">
+						</div>
+						<div class="item item-submit">
+							<input value="登录豆瓣" type="submit" class="bn-submit" tabindex="4">
+							<a href="#" class="lnk-reg">注册账号</a>
+						</div>
+						<div class="item item-action">
+							<label for="form_remember">
+                    			<input name="remember" type="checkbox" id="form_remember" tabindex="4">记住我
+               				</label>
+               				<ul class="item-action-third">
+               					<li><a class="wechat" href="#" title="微信登录">"微信登录"</a></li>
+               					<li><a class="weibo" href="#" title="微博登录">"微博登录"</a></li>
+               				</ul>
+						</div>
+					</fieldset>
+				</form>
+			</div><!-- login end -->
+			<div class="app">
+				<p class="app-title">豆瓣<span>3.0</span></p>
+				<p class="app-slogan"><span>和有趣的人做有趣的事</span></p>
+				<a href="#" class="lnk-app">下载豆瓣 App</a>
+				<div class="app-code">
+					<a href="#" class="lnk-code" id="expand-code"><img src="https://img3.doubanio.com/f/sns/2a8429401dc3b511115cad8c3d8ab8e998036e8c/pics/sns/anony_home/icon_qrcode_green.png" width="28" height="28"></a>
+				</div>
+			</div><!-- app end -->
+		</div><!-- wrapper end -->
+	</div><!-- 登陆页面结束 --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 引入js -->
+
+</body>

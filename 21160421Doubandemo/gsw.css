@@ -1,0 +1,390 @@
+/* --------------@reset-------------- */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  padding-top:30px;
+}
+
+/* ------------- @header------------- */
+#header{
+  width: 950px;
+  margin: 0 auto 25px;
+}
+
+#header h1 {
+  display:inline-block;  /* inline-block 同行三个块级均需设定，才能在一条线上 */
+  width:160px;
+  height:34px;
+  zoom: 1;/* 只有IE支持，触发ie的hasLayout属性，清除浮动、清除margin的重叠等*/ 
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 12px;
+  vertical-align:middle;/* 在包含块中居中对齐 */
+  /* image-set 实现Retina屏幕显示，两张相差一倍尺寸的背景图，根据屏幕类别（是否为Retina）和支持度来渲染 */
+  background:url('https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png') no-repeat 0 0;
+  background-image: -webkit-image-set(url('https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png')1x,url('https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png')2x);
+  background-image: -moz-image-set(url('https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png')1x,url('https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png')2x);
+  background-image: -ms-image-set(url('https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png')1x,url('https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png')2x);
+  background-image: -o-image-set(url('https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png')1x,url('https://img3.doubanio.com/f/sns/0f9e2dbca60b52f595ddbc02073cb4bb879ed1c9/pics/nav/logo_db@2x.png')2x);
+}
+#header h1 a{
+  display: block;
+  height: 34px;
+  line-height: 10em;
+  overflow:hidden;
+}
+/* @search */
+#header .search{
+  display:inline-block;/* inline-block 同行三个块级均需设定，才能在一条线上 */
+  border: 1px solid #c3c3c3;
+  position:relative;
+  vertical-align:middle;
+  width: 270px;
+  height: 30px;
+  zoom: 1; 
+}
+.search .inp{
+  height:30px;
+  overflow:hidden;
+}
+.search .inp input{
+  width:240px;
+  border:none;
+  font-size: 13px;
+  height:20px;
+  padding:5px;
+  vertical-align: middle;
+}
+.search .bn{
+  position:absolute;/* 相对search包含块定位 */
+  top:0;
+  right:0;
+  width:30px;
+  height:30px;/* 给定宽度和高度，背景图片才能显示出来 */
+  overflow: hidden;
+  background:url('https://img3.doubanio.com/f/sns/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png') 50% 50% no-repeat ;
+}
+.search .bn input{
+  border:none;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  cursor:pointer;
+  background:transparent;/* 背景透明 */
+  color:transparent;/* 字体颜色透明 */
+}
+/* @navBar */
+#header .navBar{
+  float:right;
+  margin-top:6px;
+  
+}
+.navBar ul{
+  list-style:none;
+  
+}
+.navBar ul li{
+  display:inline-block;/* inline-block 同行三个块级均需设定，才能在一条线上 */
+  zoom: 1;
+  margin: 0 0 0 17px;
+}
+.navBar li a{
+  display: inline-block;
+  zoom: 1;
+  width: 40px;
+  height: 20px;
+  overflow: hidden;
+  margin: 0;
+  line-height: 20em;
+  outline: none;
+  vertical-align: middle;
+  background: transparent;
+  background:url('https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png') 100% 100% no-repeat;
+  background-image:-webkit-image-set(url('https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png')1x,url('https://img3.doubanio.com/f/sns/0b781f71fdfde3e98b58d69ade0a988bf37a3a1c/pics/sns/anony_home/anony_nav_logo@2x.png')2x);
+  background-image:-moz-image-set(url('https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png')1x,url('https://img3.doubanio.com/f/sns/0b781f71fdfde3e98b58d69ade0a988bf37a3a1c/pics/sns/anony_home/anony_nav_logo@2x.png')2x);
+  background-image:-ms-image-set(url('https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png')1x,url('https://img3.doubanio.com/f/sns/0b781f71fdfde3e98b58d69ade0a988bf37a3a1c/pics/sns/anony_home/anony_nav_logo@2x.png')2x);
+  background-image:-o-image-set(url('https://img3.doubanio.com/f/sns/a98a716a173efb01ba787c966b4ba337b7cf9f55/pics/sns/anony_home/anony_nav_logo.png')1x,url('https://img3.doubanio.com/f/sns/0b781f71fdfde3e98b58d69ade0a988bf37a3a1c/pics/sns/anony_home/anony_nav_logo@2x.png')2x);
+}
+/* css sprite */
+.navBar li .lnk-book{
+   background-position: 0 0;
+}
+.navBar li .lnk-movie{
+   background-position: -60px 0;
+}
+.navBar li .lnk-music{
+   background-position: -120px 0;
+}
+.navBar li .lnk-group{
+   background-position: -180px 0;
+}
+.navBar li .lnk-events{
+   background-position: -240px 0;
+}
+.navBar li .lnk-fm{
+   background-position: -300px 0;
+}
+.navBar li .lnk-dongxi{
+   background-position: -360px 0;
+}
+.navBar li .lnk-market{
+   background-position: -420px 0;
+}
+/* -----------@intro－content ----------------*/
+#intro-content{
+  margin-bottom: 25px;
+  background: #eef4ed;
+}
+#intro-content .wrapper{
+  width:950px;
+  margin:0 auto;
+  position:relative;
+  padding: 28px 0 4px;
+  zoom: 1; 
+  overflow: visible;
+}
+/* 伪元素::before */
+
+#intro-content .wrapper::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:-75px;
+  z-index:0;
+  background-size: auto 227px;
+  background:url('https://img3.doubanio.com/f/sns/97a5b712ead616ceed8dbcee4468deca87ed2051/pics/sns/anony_home/doubanapp3.png') no-repeat left top;
+  background-image:-webkit-image-set(url('https://img3.doubanio.com/f/sns/97a5b712ead616ceed8dbcee4468deca87ed2051/pics/sns/anony_home/doubanapp3.png')1x,url('https://img3.doubanio.com/f/sns/55cdbd3398c049ab2ef7355ed6287ce63c45bc44/pics/sns/anony_home/doubanapp3@2x.png')2x);
+}
+/* 运用伪类进行浮动清楚，避免制造多余节点 */
+#intro-content .wrapper::after{
+  content: "\0020";
+  display: block;
+  clear: both;
+}
+/* login */
+.wrapper .login{
+  width: 270px;
+  float: right;
+  position:relative;
+  z-index:2;
+  margin-bottom: 15px;
+  /* letter-spacing: -.31em; */
+}
+.wrapper .login fieldset{
+  border:none;
+}
+.wrapper .login fieldset legend{
+  display:none;
+  color: #666;
+}
+.login .item{
+  vertical-align: top;/* 垂直方向对齐 */
+  text-align: left;
+  font-size: 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  position: relative;
+  margin-bottom: 4px;
+}
+.login .item .inp{
+  border: 1px solid #DBE5DB;
+  border-radius: 2px;
+  width: 252px;
+  padding: 0 8px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 8px;
+  outline:none;
+}
+input{
+  margin-right: 3px;
+  vertical-align: middle;
+}
+#intro－content .login .item-passwd{
+  position: relative;
+  border: 1px solid #DBE5DB;
+  border-radius: 2px;
+  background: #fff;
+  width: 268px;
+}
+#intro－content .login .item-passwd input{
+  border:0;
+}
+.login .item .opt{
+  position:absolute;
+  top: 0;
+  right: 10px;
+  font-size: 12px;
+  line-height: 35px;
+}
+.opt a{
+  color: #ccc;
+  text-decoration:none;
+}
+/* 验证 */
+.login .item-test{
+  position:relative;
+} 
+.item-test .item-block{
+  display: inline-block;
+  zoom: 1;
+}
+.item-test img{
+  width: 158px;
+  height: 26px;
+  vertical-align: middle;
+  position: absolute;
+  right: 6px;
+  top: 3px;
+}
+/* submit */
+.login .item-submit{
+  margin-top: 6px;
+}
+.item-submit .bn-submit{
+  -webkit-appearance: none;
+  padding: 0 22px;
+  margin-right: 0;
+  height: 30px;
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background: #30A080;
+  border-color: #30A080;
+  color: #fff;
+  width: 89px;
+  box-sizing:content-box;
+  -moz-box-sizing:content-box; /* Firefox */
+  -webkit-box-sizing:content-box; /* Safari */
+}
+.item-submit .lnk-reg{
+  display:inline-block;
+  zoom: 1;
+  padding: 8px 21px 7px;
+  vertical-align: top;
+  border-radius: 2px;
+  border: 1px solid #30A080;
+  font-size: 12px;
+  line-height: 1;
+  color: #30A080;
+  cursor:pointer;
+  text-decoration:none;
+  width: 89px;
+  text-align: center;
+  margin-left: 4px;
+}
+.login .item-action{
+  font-size:12px;
+  color:#666;
+  margin-top: 8px;
+  overflow: hidden;
+}
+.item .item-action-third{
+  float: right;
+  font-size: 0;
+  margin-top: 3px;
+  margin-right: 4px;
+}
+.item .item-action-third li{
+  display:inline-block;
+}
+/* 微信图标使用::before */
+.login a::before{
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.login .wechat::before{
+  background-image:url('https://img3.doubanio.com/f/sns/eb1cf8bb6ec8420fd0bdd6aadeaab318ba0c6646/pics/sns/anony_home/login/wechat@2x.png');
+  background-size: 14px 11px;
+}
+/* weibo */
+.login .weibo::before{
+  background-image:url('https://img3.doubanio.com/f/sns/e13b4f3c04b1ef540d533f7edb385a04fa7e11ae/pics/sns/anony_home/login/weibo@2x.png');
+  background-size: 14px 11px;
+}
+/* 将微信微博隔开 */
+.login .item-action-third li+li{
+  margin-left:8px;
+}
+
+
+
+/* app */
+.app{
+  position: absolute;
+  height: 120px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0 auto 375px;
+  z-index:2;
+}
+.app .app-title{
+  margin: 7px 0;
+  font-size: 25px;
+  color: #111;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;/* css3使字体平滑 */
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;/* 加强渲染，使文本在速度和可读性得到优化 */
+}
+.app-title span{
+  color: #666;
+  margin-left: 10px;
+  font-weight: 100;
+}
+.app .app-slogan{
+  margin: 0 0 18px;
+  font-size: 0;
+  color: #111;
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;/* css3使字体平滑 */
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;/* 加强渲染，使文本在速度和可读性得到优化 */
+}
+.app-slogan span{
+    font-size:12px;
+}
+.app .app-slogan::after{
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.app .lnk-app{
+  display: inline-block;
+  zoom: 1;
+  padding: 9px 21px 8px;
+  margin-right: 2px;
+  vertical-align: top;
+  border-radius: 2px;
+  font-size: 12px;
+  background: #3CA353;
+  color: #FFF;
+  text-decoration:none;
+}
+/* 二维码 */
+.app .app-code{
+  display: inline-block;
+  zoom: 1;
+  position: relative;
+}
+.app .app-code .lnk-code{
+  display: inline-block;
+  zoom: 1;
+  border: 1px solid #48aa0d;
+  border-radius: 2px;
+}
+
+
+
+
+
