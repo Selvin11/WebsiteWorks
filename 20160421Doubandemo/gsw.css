@@ -388,7 +388,7 @@ input{
 .app .lnk-app{
   display: inline-block;
   zoom: 1;
-  padding: 9px 21px 8px;
+  padding: 6px 21px 6px;
   margin-right: 2px;
   vertical-align: top;
   border-radius: 2px;
@@ -408,6 +408,9 @@ input{
   zoom: 1;
   border: 1px solid #48aa0d;
   border-radius: 2px;
+}
+#expand-code img{
+  vertical-align: middle;
 }
 /* -------@hot-content-------- */
 .section{
