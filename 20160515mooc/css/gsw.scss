@@ -1,0 +1,362 @@
+@charset "utf-8";
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// --------headerBar
+// 公共样式
+
+a{
+	color:#656565;
+	text-decoration:none;
+}
+input{
+	border:none;
+	background-color:none;
+}
+.comWidth{
+	width:1000px;
+	margin: 0 auto;
+}
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+// topBar------------------
+.topBar{
+	height:31px;
+	font:12px "Microsoft YaHei";
+	background-color:#F7F7F7;
+	line-height:31px;//减少选择器检索次数
+	& a:hover{
+		color: red;
+	}
+}
+.collection{
+	background:url('../img/star.png') left center no-repeat;
+	padding-left:19px;
+	font-weight:bold;
+}
+//logoBar-----------
+.logoBar{
+	height:85px;
+	background-color:#1d7ad9;
+}
+.logo{
+	padding-left:41px;	
+	padding-top:11px;
+}
+//search-------------
+.search_box{
+	width:430px;
+	margin-top:23px;
+	margin-left:185px;
+}
+.search_text{
+	width:350px;
+	height:35px;
+	line-height:35px;//height:35px/9;/9代表所有的IE
+	padding:0 5px;//光标位置
+	// height:14px;
+	// line-height:14px;
+	// padding:11px 5px 10px;
+}
+.search_btn{
+	width:70px;
+	height:35px;
+	font-size:14px;
+	// color:#fff;
+	background-color:#ff8c00;
+}
+//shopCar
+.shopCar{
+	width:145px;
+	height:35px;
+	background-color:#ff8c00;
+	margin-top:23px;
+	margin-right:59px;
+	//font合写
+	font:14px/35px "Microsoft YaHei";
+	color:#fff;	
+}
+.shopText,
+.shopNum{
+	height:100%;//父级元素高度
+	line-height:35px;
+}
+.shopText{
+	// font-size:14px;
+	// font-family:"Microsoft YaHei";
+	width:87px;
+	border-right:1px solid #e27a00;
+	background:url('../img/shop_car.png') 10px center no-repeat;
+	text-indent:40px;//get
+}
+.shopNum{
+	width:56px;
+	border-left:1px solid #ff9c01;
+	background:url('../img/arrow.png') 33px center no-repeat;
+	text-indent:20px;
+}
+//navBox--------------一级父级
+.navBox{
+	height:35px;
+	background-color:#1369c0;
+	font:12px "Microsoft YaHei";
+	color:#fff;
+}
+.shopClass{//一子
+	width:190px;
+	position:relative;
+	//对h3设置特殊属性，后续元素对齐display:inline-block;
+	h3{
+		font-size:16px;
+		text-align:center;
+		line-height:35px;
+	}
+	i{
+		margin-left:15px;
+		font-size:12px
+	}
+}
+.nav{//一子
+	line-height:35px;
+	li{
+		float: left;
+		a{
+			color:#fff;
+			height: 35px;
+			padding:0 35px;
+			display: inline-block;//******
+		}
+	}
+}
+.nav .active{
+	background-color:#4593fd;
+}
+//商品弹出列表
+.shopClass_show{
+	background-color:#4593fd;
+	// position:absolute;
+	// left:0;
+	// top:35px;
+	// width:100%;
+}
+.shopClass_item {
+	.b{
+		font:14px/1 "Microsoft YaHei";
+	}
+	.aLink{
+		//将a行内元素转换为块级元素，赋予宽度
+		display: inline-block;
+		width:48px;
+		height: 18px;
+		text-align:center;
+		background-color:#106ac0;
+		border-radius: 10px;
+		text-decoration: underline;
+	}
+}
+.shopClass_item {
+	padding:13px 10px;
+	border-bottom:1px solid #3487f2;
+	border-top:1px solid #5aa1fe;
+	dt{
+		height: 22px;
+	}
+	a{
+		color:#fff;
+	}
+	i{
+		float: right; 
+		font-size:12px;
+	}
+}
+//banner
+.banner_bar{//父级
+	width:810px;
+	height:326px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.imgBox{
+	width:1620px;
+	height:100%;
+	position:absolute;
+	li{
+		float: left;
+	}
+	img{
+		width:810px;
+		height:100%;
+		display: inline-block;
+	}
+}
+.imgNum{
+	position:absolute;
+	left:0;
+	bottom:10px;
+	width:100%;
+	text-align:center;
+	a{
+		width:20px;
+		height:5px;
+		overflow: hidden;
+		background-color:#fff;
+		display: inline-block;
+		margin:0 3px;
+	}
+	.active{
+		background-color:#ff8c00;
+	}
+}
+// shopTit
+.shopTit{
+	height:44px;
+	line-height:44px;
+	font-family:"Microsoft YaHei";
+	h3{
+		font-size: 24px;
+		margin-left: 15px;
+	}
+	.icon{
+		height: 44px;
+	}
+	a{
+		font-size: 12px;
+	}
+}
+//商品列表---------
+.shopList{
+	.leftArea{
+		width:190px;
+		height: 400px;
+		position:relative;
+		overflow: hidder;
+		.imgBox{
+			width:190px;
+			img{
+				width:190px;
+			}
+		}
+	}
+}
+.rightArea{
+	width:810px;
+	height: 400px;
+	border-top:1px solid #e5e5e5;
+	border-bottom:2px solid #ff7201;
+}
+// top
+.top{
+	width:810px;
+	height: 279px;
+}
+.top .top_item{
+
+	line-height:24px;
+	li{
+		width:202px;
+		height: 279px;
+		text-align: center;
+		float: left;
+		border-right:1px solid #e5e5e5;
+		border-bottom:1px solid #e5e5e5;
+	}
+	p{
+		color: #ffa97d;
+	}
+}
+// bottom
+.bottom{
+	width:810px;
+	height:119px;
+	
+}
+.bottom_img{
+	width:90px;
+	text-align: center;
+}
+.bottom_item{
+	
+	li{
+		width:202px;
+		height: 119px;
+		padding-top:20px;
+		float: left;
+		border-right:1px solid #e5e5e5;
+	}
+}
+.bottom_text{
+	width:100px;
+	height: 22px;
+	font-size: 12px;
+	line-height: 22px;
+	p{
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
