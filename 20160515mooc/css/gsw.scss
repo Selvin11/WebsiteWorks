@@ -181,12 +181,16 @@ input{
 	background-color:#4593fd;
 }
 //商品弹出列表
+.hide{
+	display:none;
+}
+//----------------------------------------question
 .shopClass_show{
 	background-color:#4593fd;
 	// position:absolute;
-	// left:0;
-	// top:35px;
-	// width:100%;
+	left:0;
+	top:35px;
+	width:100%;
 }
 .shopClass_item {
 	.b{
@@ -222,7 +226,7 @@ input{
 .banner_bar{//父级
 	width:810px;
 	height:326px;
-	float:left;
+	// float:right;//右浮动,已经给html添加fr样式
 	position:relative;
 	overflow:hidden;
 	margin-bottom:20px;
@@ -262,6 +266,7 @@ input{
 .shopTit{
 	height:44px;
 	line-height:44px;
+	margin-bottom:10px;
 	font-family:"Microsoft YaHei";
 	h3{
 		font-size: 24px;
@@ -276,11 +281,12 @@ input{
 }
 //商品列表---------
 .shopList{
+	margin-bottom:15px;
 	.leftArea{
 		width:190px;
 		height: 400px;
 		position:relative;
-		overflow: hidder;
+		overflow: hidden;
 		.imgBox{
 			width:190px;
 			img{
@@ -301,7 +307,6 @@ input{
 	height: 279px;
 }
 .top .top_item{
-
 	line-height:24px;
 	li{
 		width:202px;
@@ -315,21 +320,22 @@ input{
 		color: #ffa97d;
 	}
 }
+.top , .bottom{
+	margin-left:2px;
+}
 // bottom
 .bottom{
 	width:810px;
 	height:119px;
-	
 }
 .bottom_img{
 	width:90px;
 	text-align: center;
 }
 .bottom_item{
-	
 	li{
 		width:202px;
-		height: 119px;
+		height: 118px;
 		padding-top:20px;
 		float: left;
 		border-right:1px solid #e5e5e5;
@@ -337,26 +343,218 @@ input{
 }
 .bottom_text{
 	width:100px;
-	height: 22px;
+	height: 20px;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 20px;
+	margin-top:10px;
 	p{
 		font-size: 16px;
 	}
 }
+//footer
+.footer{
+	width:100%;
+	background-color:#d4d4d4;
+	padding-top:45px;
+	margin-top:40px;
+	text-align:center;
+	line-height:22px;
+	ul{
+		padding:30px 0;
+	}
+	li{
+		display: inline-block;
+		margin-left: 20px;
 
+	}
+}
+//product-----------------------------------
+.products{
+	margin-top:20px;
+	.fl{
+		width: 187px;
+	}
+	.fr{
+		width: 810px;
+	}
+}
+.leftNav{
+	border:1px solid #d7d7d7;
+	background-color:#f3f3f3;
+	h3{
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		font-weight: bold;
+		border-bottom:1px solid #d7d7d7;
+	}
+	dl{
+		padding-left: 21px;
+		border-bottom:1px dotted #d7d7d7;
+		margin-bottom:-1px;//使得最后一个dl的虚线边框与最外边框重合
+	}
+	dt{
+		width: 100%;
+		margin:10px 0 5px 0;
+		font-weight: bold;
+	}
+	dd{
+		height: 20px;
+		line-height: 20px;
+		width: 50%;
+		margin:3px 0;
+		float: left;
+	}
+}
+.products_content{
+	margin-bottom:22px;
+}
+.products_title{
+	border-bottom:2px solid #cccccc;
+	height:30px;//边框重合
+	h3{
+		width: 178px;
+		height:30px;//边框重合
+		padding:0 0 10px 10px;
+		border-bottom:2px solid #096dba;
+	}
+}
+.products_body{
+	width:810px;
+	li{
+		width: 200px;
+		float: left;
+	}
+}
+.products_info{
+	p,span{
+		line-height: 20px;
+		margin:0 0 10px 10px; 
+		
+	}
+	span{
+		font-size: 12px;
+		i{
+			display: inline-block;
+			width: 12px;
+			height: 13px;
+			margin-left: 3px;
+			background:url(../img/star.png) left center no-repeat;
+		}
+	}
+	
+}
 
+.money{
+	color:#d4105a;
+}
+// 产品筛选页面---------------------------------------------------
+.screen{
+	dd{
+		float: none;
+	}
+}
+.screen_nav{
+	margin-bottom:20px;
+	dl{
+		line-height: 32px;
+		border-bottom:1px solid #ccc;
+	}
+	dt{
+		width: 74px;
+		text-align: right;
+		float: left;
+		
+	}
+	dd{
+		float: left;
+	}
+	.active{
+		color:#fff;
+		background-color:#1d7ad9;
+		padding:2px;
+	}
+	.more{
+		border:1px solid #ccc;
+		padding:5px 15px;
+	}
+	i{
+		font-size: 10px;
+	}
+}
+.unlimit{
+	width:55px;
+	margin-left:20px;
+	
+}
+.screen_list{
+	width:626px;
+	li{
+		width: 20%;
+		float: left;
+	}
+}
+// express
+.express{
+	width:810px;
+	height:30px;
+	line-height:30px;
+	margin-bottom:20px;
+	background-color:#f5f5f5;
+	span{
+		float: left;
+		i{
+			color: #d70054;
+		}
+	}
+	.more{
+		padding:5px;
+		border:1px solid #ccc;
+		background-color:#fff;
+		i{
+			font-size: 10px;
+			color: #1d7ad9;
+		}
+	}
+	.right{
+		width: 530px;
+		margin-left: 10px;
+	}
+}
+// screen_info
+.screen_info{
+	width:810px;
+	li{
+		width: 192px;
+		float: left;
+		margin:15px 20px;
+	}
+	.list_con{
+		margin-left: 30px;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.screen_info_list{
+	p{
+		line-height: 20px;
+		margin-bottom: 10px;
+		span{
+			color:red;
+			margin-right: 10px;
+		}
+		i{
+			font-size: 10px;
+			color: #1d7ad9;
+		}
+	}
+	.more{
+		width: 108px;
+		background-color:#fff;
+		color:#3a79be;
+		border:1px solid #c3d5e7;
+		padding: 6px 2px;
+		display: block;
+		text-indent: 20px;
+		background: url("../img/smshopcar.jpg") left center no-repeat;
+	}
+}

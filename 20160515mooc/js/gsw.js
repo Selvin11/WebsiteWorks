@@ -42,9 +42,9 @@ function addLoadEvent(func){
 // 		}
 // }
 $(function(){
-	$("#imgNum a").each(function(){
+	$(".banner_bar #imgNum a").each(function(){
 		$(this).click(function(){
-			$("#imgNum a").removeClass();
+			$(".banner_bar #imgNum a").removeClass();
 			$(this).addClass('active');
 			$("#imgBox").css('left', - $(this).index()*810 + 'px');
 		})
@@ -57,8 +57,8 @@ $(function(){
 		if (i==2) {
 			i=0;
 		}
-		$("#imgNum a").removeClass();
-		$("#imgNum a").eq(i).addClass('active');
+		$(".banner_bar #imgNum a").removeClass();
+		$(".banner_bar #imgNum a").eq(i).addClass('active');
 		$("#imgBox").css("left", -(i*810) + 'px');
 		console.log(i);
 	}

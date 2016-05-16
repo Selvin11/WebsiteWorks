@@ -157,8 +157,14 @@ input {
 .nav .active {
   background-color: #4593fd; }
 
+.hide {
+  display: none; }
+
 .shopClass_show {
-  background-color: #4593fd; }
+  background-color: #4593fd;
+  left: 0;
+  top: 35px;
+  width: 100%; }
 
 .shopClass_item .b {
   font: 14px/1 "Microsoft YaHei"; }
@@ -186,7 +192,6 @@ input {
 .banner_bar {
   width: 810px;
   height: 326px;
-  float: left;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px; }
@@ -221,6 +226,7 @@ input {
 .shopTit {
   height: 44px;
   line-height: 44px;
+  margin-bottom: 10px;
   font-family: "Microsoft YaHei"; }
   .shopTit h3 {
     font-size: 24px;
@@ -230,15 +236,17 @@ input {
   .shopTit a {
     font-size: 12px; }
 
-.shopList .leftArea {
-  width: 190px;
-  height: 400px;
-  position: relative;
-  overflow: hidder; }
-  .shopList .leftArea .imgBox {
-    width: 190px; }
-    .shopList .leftArea .imgBox img {
+.shopList {
+  margin-bottom: 15px; }
+  .shopList .leftArea {
+    width: 190px;
+    height: 400px;
+    position: relative;
+    overflow: hidden; }
+    .shopList .leftArea .imgBox {
       width: 190px; }
+      .shopList .leftArea .imgBox img {
+        width: 190px; }
 
 .rightArea {
   width: 810px;
@@ -262,6 +270,9 @@ input {
   .top .top_item p {
     color: #ffa97d; }
 
+.top, .bottom {
+  margin-left: 2px; }
+
 .bottom {
   width: 810px;
   height: 119px; }
@@ -272,17 +283,178 @@ input {
 
 .bottom_item li {
   width: 202px;
-  height: 119px;
+  height: 118px;
   padding-top: 20px;
   float: left;
   border-right: 1px solid #e5e5e5; }
 
 .bottom_text {
   width: 100px;
-  height: 22px;
+  height: 20px;
   font-size: 12px;
-  line-height: 22px; }
+  line-height: 20px;
+  margin-top: 10px; }
   .bottom_text p {
     font-size: 16px; }
+
+.footer {
+  width: 100%;
+  background-color: #d4d4d4;
+  padding-top: 45px;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 22px; }
+  .footer ul {
+    padding: 30px 0; }
+  .footer li {
+    display: inline-block;
+    margin-left: 20px; }
+
+.products {
+  margin-top: 20px; }
+  .products .fl {
+    width: 187px; }
+  .products .fr {
+    width: 810px; }
+
+.leftNav {
+  border: 1px solid #d7d7d7;
+  background-color: #f3f3f3; }
+  .leftNav h3 {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #d7d7d7; }
+  .leftNav dl {
+    padding-left: 21px;
+    border-bottom: 1px dotted #d7d7d7;
+    margin-bottom: -1px; }
+  .leftNav dt {
+    width: 100%;
+    margin: 10px 0 5px 0;
+    font-weight: bold; }
+  .leftNav dd {
+    height: 20px;
+    line-height: 20px;
+    width: 50%;
+    margin: 3px 0;
+    float: left; }
+
+.products_content {
+  margin-bottom: 22px; }
+
+.products_title {
+  border-bottom: 2px solid #cccccc;
+  height: 30px; }
+  .products_title h3 {
+    width: 178px;
+    height: 30px;
+    padding: 0 0 10px 10px;
+    border-bottom: 2px solid #096dba; }
+
+.products_body {
+  width: 810px; }
+  .products_body li {
+    width: 200px;
+    float: left; }
+
+.products_info p, .products_info span {
+  line-height: 20px;
+  margin: 0 0 10px 10px; }
+.products_info span {
+  font-size: 12px; }
+  .products_info span i {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin-left: 3px;
+    background: url(../img/star.png) left center no-repeat; }
+
+.money {
+  color: #d4105a; }
+
+.screen dd {
+  float: none; }
+
+.screen_nav {
+  margin-bottom: 20px; }
+  .screen_nav dl {
+    line-height: 32px;
+    border-bottom: 1px solid #ccc; }
+  .screen_nav dt {
+    width: 74px;
+    text-align: right;
+    float: left; }
+  .screen_nav dd {
+    float: left; }
+  .screen_nav .active {
+    color: #fff;
+    background-color: #1d7ad9;
+    padding: 2px; }
+  .screen_nav .more {
+    border: 1px solid #ccc;
+    padding: 5px 15px; }
+  .screen_nav i {
+    font-size: 10px; }
+
+.unlimit {
+  width: 55px;
+  margin-left: 20px; }
+
+.screen_list {
+  width: 626px; }
+  .screen_list li {
+    width: 20%;
+    float: left; }
+
+.express {
+  width: 810px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5; }
+  .express span {
+    float: left; }
+    .express span i {
+      color: #d70054; }
+  .express .more {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; }
+    .express .more i {
+      font-size: 10px;
+      color: #1d7ad9; }
+  .express .right {
+    width: 530px;
+    margin-left: 10px; }
+
+.screen_info {
+  width: 810px; }
+  .screen_info li {
+    width: 192px;
+    float: left;
+    margin: 15px 20px; }
+  .screen_info .list_con {
+    margin-left: 30px; }
+
+.screen_info_list p {
+  line-height: 20px;
+  margin-bottom: 10px; }
+  .screen_info_list p span {
+    color: red;
+    margin-right: 10px; }
+  .screen_info_list p i {
+    font-size: 10px;
+    color: #1d7ad9; }
+.screen_info_list .more {
+  width: 108px;
+  background-color: #fff;
+  color: #3a79be;
+  border: 1px solid #c3d5e7;
+  padding: 6px 2px;
+  display: block;
+  text-indent: 20px;
+  background: url("../img/smshopcar.jpg") left center no-repeat; }
 
 /*# sourceMappingURL=gsw.css.map */
